@@ -1,0 +1,47 @@
+.banner-container {
+  background-color: #e0dad0;
+  width: 100%;
+  padding: 20px;
+}
+
+.banner-container-left {
+  width: 100%;
+  margin: 0 0 0 3.5em;
+}
+
+.banner-container-right {
+  width: 100%;
+  padding: 0 0 0 40em;
+  justify-content: end;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  height: 1em;
+  width: 1em;
+  font-size: 2.5em;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.center-align-class {
+  margin: 0 auto;
+}
+
+.right-align-class {
+  float: right;
+}
+
+#tilte {
+  float: left;
+}
+
+.input-bar {
+  width: 45%;
+}

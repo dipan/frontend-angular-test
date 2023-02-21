@@ -1,0 +1,10 @@
+<table class="table-generic-border">
+  <tr>
+    <th *ngFor="let header of dataSource.headers" class="test-border">
+      {{ header }}
+    </th>
+  </tr>
+  <tr *ngFor="let row of dataSource.data">
+    <td *ngFor="let i of row" class="test-border">{{ i }}</td>
+  </tr>
+</table>

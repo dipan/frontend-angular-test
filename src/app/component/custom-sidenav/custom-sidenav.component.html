@@ -1,0 +1,36 @@
+<div class="content-horizontal">
+  <div class="content-vertical custom-sidenav mr">
+    <div *ngFor="let menu of sidenavData.items">
+      <div class="content-horizontal custom-sidenav-menu" (click)="collapseSubMenu(menu.hasSubMenu)">
+        <span>{{ menu.title }}</span>
+        <div *ngIf="menu.hasSubMenu">
+          <i class="bi bi-arrow-up" *ngIf="menu.hasSubMenu && !collapse"></i>
+          <i class="bi bi-arrow-down" *ngIf="menu.hasSubMenu && collapse"></i>
+        </div>
+      </div>
+      <div class="content-vertical" *ngIf="menu.hasSubMenu && !collapse">
+        <span *ngFor="let subMenu of menu.items; index as i" (click)="selectOption(i + 1)"
+          class="custom-sidenav-submenu" [class.custom-sidenav-submenu-selected]="selectedOption === (i+1)">
+          {{ subMenu.title }}</span>
+      </div>
+    </div>
+    <span *ngFor="let option of options; index as i" (click)="selectOption(i + 1)" class="custom-sidenav-submenu">{{
+      option }}</span>
+  </div>
+  <div *ngIf="selectedOption === 1" class="content-vertical">
+    <div class="right px-1">
+      <app-badge class="px-2" [backgroudColor]="'#57E850'"></app-badge>
+      <app-badge [badgeText]="'All'" [backgroudColor]="'#E8509C'" class="px-1"></app-badge>
+      <app-badge [badgeText]="'Approved'" class="px-1"></app-badge>
+      <app-badge [badgeText]="'Not Approved'" class="px-1"></app-badge>
+    </div>
+    <app-view-title [title]="'Contact Information'"></app-view-title>
+    <app-table-generic></app-table-generic>
+  </div>
+  <div *ngIf="selectedOption === 2" class="content-vertical">
+    <app-bannar-title [title]="'General Information'"></app-bannar-title>
+  </div>
+  <div *ngIf="selectedOption === 3">View 3</div>
+  <div *ngIf="selectedOption === 4">View 4</div>
+  <div *ngIf="selectedOption === 5">View 5</div>
+</div>

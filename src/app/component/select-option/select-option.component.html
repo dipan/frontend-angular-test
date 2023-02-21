@@ -1,0 +1,17 @@
+<select
+  class="form-control select2"
+  style="width: 100%"
+  tabindex="-1"
+  aria-hidden="true"
+  [(ngModel)]="selected"
+  (change)="selectOptionEvent.emit(selected)"
+>
+  <option selected disabled>{{ name }}</option>
+  <option *ngFor="let option of options">
+    {{ option }}
+  </option>
+</select>
+
+<!-- [(ngModel)]="selected" -->
+<!-- (click)="selectOption($event)"
+  (change)="selectOption($event)" -->

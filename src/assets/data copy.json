@@ -1,0 +1,60 @@
+{
+  "accountData": [
+    {
+      "accountNo": 123,
+      "name": "John Snow",
+      "telephoneNo": "123-789",
+      "lastUpdatedOn": "01/01/2023"
+    },
+    {
+      "accountNo": 234,
+      "name": "Jimmy Gil",
+      "telephoneNo": "123-456",
+      "lastUpdatedOn": "02/02/2023"
+    },
+    {
+      "accountNo": 345,
+      "name": "Tommy Gil",
+      "telephoneNo": "123-456",
+      "lastUpdatedOn": "12/02/2023"
+    },
+    {
+      "accountNo": 456,
+      "name": "Rana",
+      "telephoneNo": "123-456",
+      "lastUpdatedOn": "02/02/2023"
+    },
+    {
+      "accountNo": 567,
+      "name": "Doe",
+      "telephoneNo": "123-456",
+      "lastUpdatedOn": "02/02/2023"
+    }
+  ],
+  "bannerData": [
+    {
+      "title": "RETAIL - FINANCIAL INSTITUTION",
+      "name": "John Snow",
+      "address": "BNY MELLON. N.A, BNAK CUSTOM",
+      "city": "JERSEY CITY",
+      "state": "NJ",
+      "postal_code": "07399-0001",
+      "home_phone": "(877)878-7230",
+      "cell_phone": "(866)355-5571",
+      "us_tax_id": "978-91-3337",
+      "primary-ip": "000"
+    },
+    {
+      "title": "RETAIL - FINANCIAL INSTITUTION",
+      "name": "Jimmy Gil",
+      "address": "BNY MELLON. N.A, BNAK CUSTOM",
+      "city": "JERSEY CITY",
+      "state": "NJ",
+      "postal_code": "07399-0001",
+      "home_phone": "(877)878-7230",
+      "cell_phone": "(866)355-5571",
+      "us_tax_id": "876-84-3337",
+      "primary-ip": "000"
+    }
+  ]
+}

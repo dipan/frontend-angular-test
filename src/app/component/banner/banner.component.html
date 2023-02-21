@@ -1,0 +1,30 @@
+<div class="content-vertical">
+  <div class="content-horizontal space-between py-5">
+    <app-search-bar [buttonText]="'Edit'" (searchEvent)="search($event)" class="input-bar"></app-search-bar>
+    <i (click)="closeBanner()" class="bi bi-x-square close"></i>
+  </div>
+  <div class="banner-container">
+    <div id="title" class="content-horizontal space-between">
+      <h1><b>Title:</b></h1>
+      <h1><b>{{ bannerData.title }}</b></h1>
+    </div>
+    <div class="content-horizontal">
+      <div class="content-vertical banner-container-left">
+        <span><b>{{ bannerData.title }}</b></span>
+        <span>
+          <p>{{ bannerData.address }}</p>
+        </span>
+        <span><b>Postal Code: </b>{{ bannerData.postal_code }}</span>
+        <span><b>Home Phone: </b>{{ bannerData.home_phone }}</span>
+      </div>
+      <div class="content-vertical banner-container-right">
+        <span><b>US Tax Id#</b> : {{ bannerData.us_tax_id }}</span>
+        <span><b>Business Phone</b> : {{ bannerData.business_phone }}</span>
+        <span><b>Primary IP#</b> : {{ bannerData.primary_ip }}</span>
+        <span><b>Cell Phone</b> : {{ bannerData.cell_phone }}</span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</div>

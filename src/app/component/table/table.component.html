@@ -1,0 +1,19 @@
+<div>
+  <h3>{{ heading }}</h3>
+</div>
+<table id="customers">
+  <tr>
+    <th>Account No</th>
+    <th>Name</th>
+    <th>Telephone No</th>
+    <th>Last Updated On</th>
+  </tr>
+  <tr *ngFor="let data of dataSource">
+    <td (click)="selectAccountNo(data.unique_id)">
+      <a href="#">{{ data.unique_id }}</a>
+    </td>
+    <td>{{ data.title }}</td>
+    <td>{{ data.telephone_no }}</td>
+    <td>{{ data.updated_on }}</td>
+  </tr>
+</table>

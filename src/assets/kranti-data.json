@@ -1,0 +1,166 @@
+[
+  {
+    "title": "Title 1",
+    "address": "Address 1",
+    "postal_code": "456789-123465",
+    "telephone_no": "456123",
+    "fax_no": "789465",
+    "home_phone": "753421",
+    "business_phone": "",
+    "cell_phone": "",
+    "us_tax_id": "",
+    "primary_ip": "",
+    "unique_id": "Q123",
+    "updated_on": "12/02/1234",
+    "items": {
+      "title": "Account Information",
+      "hasSubMenu": true,
+      "items": [
+        {
+          "title": "Contact Information",
+          "display_type": "table",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "General Information",
+          "badge": "New",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Personal Information",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Title 2",
+    "address": "Address 2",
+    "postal_code": "22222-123465",
+    "telephone_no": "22222356",
+    "fax_no": "222265",
+    "home_phone": "222221",
+    "business_phone": "Business 2",
+    "cell_phone": "",
+    "us_tax_id": "",
+    "primary_ip": "",
+    "unique_id": "W222",
+    "updated_on": "02/02/2222",
+    "items": {
+      "title": "Account Information",
+      "hasSubMenu": true,
+      "items": [
+        {
+          "title": "Contact Information",
+          "display_type": "table",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "General Information",
+          "badge": "New",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Personal Information",
+          "items": [
+            {
+              "label": "Heading 1",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false },
+                { "label": "Key 3", "value": "Value 3", "is_required": false }
+              ]
+            },
+            {
+              "label": "Heading 2",
+              "items": [
+                { "label": "Key 1", "value": "Value 1", "is_required": false },
+                { "label": "Key 2", "value": "Value 2", "is_required": false }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
