@@ -42,19 +42,19 @@
       <div class="text-center mb-3">
         <p>Sign in with:</p>
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-facebook-f"></i>
+          <i class="bi bi-facebook"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-google"></i>
+          <i class="bi bi-google"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
+          <i class="bi bi-twitter"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-github"></i>
+          <i class="bi bi-github"></i>
         </button>
       </div>
 
@@ -97,13 +97,22 @@
       </div>
 
       <!-- Submit button -->
-      <button type="submit" class="btn btn-primary btn-block mb-4">
+      <button
+        id="btn-sign-in"
+        type="submit"
+        class="btn btn-primary btn-block mb-4"
+      >
         Sign in
       </button>
 
       <!-- Register buttons -->
       <div class="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
+        <p>
+          Not a member?
+          <a class="cursor-pointer" (click)="selectedTab = 'register'"
+            >Register</a
+          >
+        </p>
       </div>
     </form>
   </div>
@@ -118,19 +127,19 @@
       <div class="text-center mb-3">
         <p>Sign up with:</p>
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-facebook-f"></i>
+          <i class="bi bi-facebook"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-google"></i>
+          <i class="bi bi-google"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
+          <i class="bi bi-twitter"></i>
         </button>
 
         <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-github"></i>
+          <i class="bi bi-github"></i>
         </button>
       </div>
 

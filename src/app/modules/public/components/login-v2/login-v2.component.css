@@ -1,0 +1,7 @@
+#btn-sign-in {
+  transition: all 0.5ms ease;
+}
+
+#btn-sign-in:active {
+  transform: scale(0.9);
+}

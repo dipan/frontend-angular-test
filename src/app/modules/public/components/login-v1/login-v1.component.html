@@ -7,7 +7,23 @@
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" id="form2Example2" class="form-control" />
+    <div class="col">
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        id="form2Example2"
+        class="form-control"
+      />
+      <i
+        class="bi bi-eye-slash togglePassword"
+        (mousedown)="showPassword = !showPassword"
+        *ngIf="!showPassword"
+      ></i>
+      <i
+        class="bi bi-eye togglePassword"
+        (mouseup)="showPassword = !showPassword"
+        *ngIf="showPassword"
+      ></i>
+    </div>
     <label class="form-label" for="form2Example2">Password</label>
   </div>
 
