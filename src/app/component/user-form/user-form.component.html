@@ -1,0 +1,24 @@
+<form [formGroup]="userForm" class="example-form">
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Account Number</mat-label>
+          <input matInput [disabled]="true" formControlName="accountNo" />
+        </mat-form-field>
+      </td>
+      <td>
+        <!-- <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field> -->
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Name</mat-card-title>
+            <mat-card-subtitle>{{ userForm.value.name }}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </td>
+    </tr>
+  </table>
+</form>

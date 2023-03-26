@@ -6,6 +6,7 @@
       placeholder="What are you looking for?"
       [(ngModel)]="searchText"
       (keyup.enter)="keyupEvent($event)"
+      oninput="this.value = this.value.toUpperCase()"
     />
     <button type="submit" class="searchButton" (click)="search()">
       {{ buttonText }}

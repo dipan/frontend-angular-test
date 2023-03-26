@@ -2,11 +2,14 @@
 <div class="toolbar navbar-light" role="banner">
   <img src="assets/bny_mellon_logo.svg" width="180px" />
   <div class="spacer"></div>
+  <app-search-input></app-search-input>
   <span class="toolbar-option">Home</span>
   <span class="toolbar-option">About</span>
   <span class="toolbar-option">Service</span>
   <span class="toolbar-option">Contact</span>
-  <button type="button" class="btn btn-light btn-lg toolbar-option">Login</button>
+  <button type="button" class="btn btn-light btn-lg toolbar-option">
+    Login
+  </button>
 </div>
 
 <div class="content main-axis-center" role="main" *ngIf="!isSearchDone">
@@ -15,22 +18,50 @@
     <div class="content-horizontal main-axis-center">
       <h1 class="heading">{{ title }}</h1>
     </div>
-    <div class="content-horizontal app-search-bar-container">
-      <app-search-bar [buttonText]="'Search'" (searchEvent)="search($event)" class="app-search-bar"></app-search-bar>
+    <div class="content-horizontal main-axis-center">
+      <app-search-bar
+        [buttonText]="'Search'"
+        (searchEvent)="search($event)"
+        class="app-search-bar"
+      ></app-search-bar>
     </div>
-    <br />
-    <div class="content-horizontal app-search-bar-container">
-      <app-table [dataSource]="recentSearch" (searchEvent)="search($event)" class="app-search-bar"></app-table>
+    <!-- <div class="content-horizontal main-axis-center">
+      <app-card-row></app-card-row>
+    </div>
+    <div class="content-horizontal test-border">
+      <app-banner-v1></app-banner-v1>
+    </div> -->
+    <div class="content-horizontal main-axis-center">
+      <app-user-form></app-user-form>
+    </div>
+    <!-- <div class="content-horizontal main-axis-center">
+      <app-table
+        [dataSource]="recentSearch"
+        (searchEvent)="search($event)"
+        class="app-search-bar"
+      ></app-table>
+    </div> -->
+    <!-- <div class="content-horizontal main-axis-center">
+      <app-filter-type class="px-1"></app-filter-type>
+      <app-filter-type [type]="'Top Results'" class="px-1"></app-filter-type>
+      <app-filter-type
+        [type]="'Account'"
+        [count]="456"
+        class="px-1"
+      ></app-filter-type>
+      <app-filter-type
+        [type]="'Client'"
+        [count]="446"
+        class="px-1"
+      ></app-filter-type>
+      <app-information-card></app-information-card>
+    </div> -->
+    <!-- <div class="content-horizontal main-axis-center">
+      <app-select-option></app-select-option>
+    </div> -->
+    <div class="content-horizontal main-axis-center">
+      <app-search-bar-with-option></app-search-bar-with-option>
     </div>
   </div>
 </div>
-<div class="content content-vertical root-banner" *ngIf="isSearchDone">
-  <div *ngIf="foundSearch">
-    <app-banner class="child-container" [bannerData]="foundSearch" (close)="clearSearch()"></app-banner>
-    <br />
-    <app-custom-sidenav [sidenavData]="foundSearch"></app-custom-sidenav>
-  </div>
-  <div *ngIf="!foundSearch">
-    <app-banner-empty></app-banner-empty>
-  </div>
-</div>
+<router-outlet></router-outlet>

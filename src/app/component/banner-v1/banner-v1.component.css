@@ -1,0 +1,12 @@
+#banner-v1 {
+  display: flex;
+  background-color: rgb(165, 217, 200);
+  padding: 4px;
+  width: 900px;
+  margin: 0;
+}
+
+#address {
+  padding-left: 15%;
+  padding-right: 65%;
+}

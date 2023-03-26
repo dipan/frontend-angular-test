@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-subtitle>{{ subTitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>This card indeterminates progress bar.</p>
+    <!-- <p *ngFor="let item of cardInformation | keyValueList">
+      <b>{{ item.key }}:</b> {{ item.value }}
+    </p> -->
+    <table class="full-width">
+      <tr *ngFor="let item of cardInformation | keyValueList">
+        <td>
+          <b>{{ item.key }}:</b>
+        </td>
+        <td>{{ item.value }}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+  <hr />
+  <mat-card-actions>
+    <b>Go to: </b>
+    <div *ngFor="let action of actions; index as i">
+      <a href="" class="px-1">{{ action }}</a>
+      <span *ngIf="i != actions.length - 1">|</span>
+    </div>
+  </mat-card-actions>
+</mat-card>

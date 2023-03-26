@@ -7,11 +7,24 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SelectOptionComponent implements OnInit {
   @Input() name: string = 'Select';
-  @Input() options = ['1', '2'];
+  @Input() options: {
+    name: string;
+    value: any;
+    [key: string]: any;
+  }[] = [
+    {
+      name: 'One',
+      value: 1,
+    },
+    {
+      name: 'Two',
+      value: 2,
+    },
+  ];
 
   @Output() selectOptionEvent = new EventEmitter<string>();
 
-  selected: string;
+  selected: any;
 
   constructor() {
     this.selected = this.name;
@@ -24,7 +37,10 @@ export class SelectOptionComponent implements OnInit {
     this.selected = this.name;
   }
 
-  selectOption() {
+  onChange() {
     console.log(this.selected);
+    console.log(this.selected.name);
+    console.log(this.selected.value);
+    this.selectOptionEvent.emit(this.selected);
   }
 }

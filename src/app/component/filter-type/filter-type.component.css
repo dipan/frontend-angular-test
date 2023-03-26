@@ -1,0 +1,8 @@
+mat-card:hover {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgb(105, 110, 114);
+  color: rgb(255, 255, 255);
+}

@@ -4,14 +4,10 @@
   tabindex="-1"
   aria-hidden="true"
   [(ngModel)]="selected"
-  (change)="selectOptionEvent.emit(selected)"
+  (change)="onChange()"
 >
-  <option selected disabled>{{ name }}</option>
-  <option *ngFor="let option of options">
-    {{ option }}
+  <option [selected]="true" [disabled]="true">{{ name }}</option>
+  <option *ngFor="let option of options" value="{{ option }}">
+    {{ option.name }}
   </option>
 </select>
-
-<!-- [(ngModel)]="selected" -->
-<!-- (click)="selectOption($event)"
-  (change)="selectOption($event)" -->

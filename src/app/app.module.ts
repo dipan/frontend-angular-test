@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,11 +18,19 @@ import { TableGenericComponent } from './component/table-generic/table-generic.c
 import { BannarTitleComponent } from './component/bannar-title/bannar-title.component';
 import { BadgeComponent } from './component/badge/badge.component';
 import { ViewTitleComponent } from './component/custom-sidenav/view-title/view-title.component';
+import { UserFormComponent } from './component/user-form/user-form.component';
+import { MaterialModule } from './material.module';
+import { NareshSidenavComponent } from './component/naresh-sidenav/naresh-sidenav.component';
+import { InformationCardComponent } from './component/information-card/information-card.component';
+import { KeyValueListPipe } from './pipes/key-value-list.pipe';
+import { FilterTypeComponent } from './component/filter-type/filter-type.component';
+import { CardRowComponent } from './component/card-row/card-row.component';
+import { SearchInputComponent } from './component/search-input/search-input.component';
+import { BannerV1Component } from './component/banner-v1/banner-v1.component';
+import { SearchBarWithOptionComponent } from './component/search-bar-with-option/search-bar-with-option.component';
+import { PublicModule } from './modules/public/public.module';
 
-const routes: Routes = [
-  { path: '', component: SearchBarComponent },
-  { path: 'banner', component: BannerComponent },
-];
+const routes: Routes = [{ path: 'banner', component: BannerComponent }];
 
 @NgModule({
   declarations: [
@@ -38,15 +46,26 @@ const routes: Routes = [
     BannarTitleComponent,
     BadgeComponent,
     ViewTitleComponent,
+    UserFormComponent,
+    NareshSidenavComponent,
+    InformationCardComponent,
+    KeyValueListPipe,
+    FilterTypeComponent,
+    CardRowComponent,
+    SearchInputComponent,
+    BannerV1Component,
+    SearchBarWithOptionComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    MaterialModule,
     ReactiveFormsModule,
     NgbModule,
-    RouterModule,
+    PublicModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,6 @@
+<mat-card [ngClass]="{ selected: selected }" (click)="select()">
+  <mat-card-content>
+    {{ type }}
+    <span *ngIf="count">({{ count }})</span>
+  </mat-card-content>
+</mat-card>
