@@ -2,25 +2,27 @@
 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
   <li class="nav-item" role="presentation">
     <a
-      class="nav-link active"
+      class="nav-link cursor-pointer"
+      [ngClass]="{ active: selectedTab === 'login' }"
       id="tab-login"
       data-mdb-toggle="pill"
-      href="#pills-login"
       role="tab"
       aria-controls="pills-login"
       aria-selected="true"
+      (click)="selectedTab = 'login'"
       >Login</a
     >
   </li>
   <li class="nav-item" role="presentation">
     <a
-      class="nav-link"
+      class="nav-link cursor-pointer"
+      [ngClass]="{ active: selectedTab === 'register' }"
       id="tab-register"
       data-mdb-toggle="pill"
-      href="#pills-register"
       role="tab"
       aria-controls="pills-register"
-      aria-selected="false"
+      aria-selected="true"
+      (click)="selectedTab = 'register'"
       >Register</a
     >
   </li>
@@ -34,6 +36,7 @@
     id="pills-login"
     role="tabpanel"
     aria-labelledby="tab-login"
+    *ngIf="selectedTab === 'login'"
   >
     <form>
       <div class="text-center mb-3">
@@ -105,10 +108,11 @@
     </form>
   </div>
   <div
-    class="tab-pane fade"
+    class="tab-pane fade show active"
     id="pills-register"
     role="tabpanel"
     aria-labelledby="tab-register"
+    *ngIf="selectedTab === 'register'"
   >
     <form>
       <div class="text-center mb-3">

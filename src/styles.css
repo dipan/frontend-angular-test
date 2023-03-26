@@ -44,15 +44,10 @@ body {
   height: 100%;
 }
 
-.test-border {
-  border: 3px solid black;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+.test-border {
+  border: 3px solid black;
 }
