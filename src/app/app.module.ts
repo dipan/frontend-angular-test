@@ -29,6 +29,7 @@ import { SearchInputComponent } from './component/search-input/search-input.comp
 import { BannerV1Component } from './component/banner-v1/banner-v1.component';
 import { SearchBarWithOptionComponent } from './component/search-bar-with-option/search-bar-with-option.component';
 import { PublicModule } from './modules/public/public.module';
+import { NavbarV1Component } from './component/navbar-v1/navbar-v1.component';
 
 const routes: Routes = [{ path: 'banner', component: BannerComponent }];
 
@@ -55,6 +56,7 @@ const routes: Routes = [{ path: 'banner', component: BannerComponent }];
     SearchInputComponent,
     BannerV1Component,
     SearchBarWithOptionComponent,
+    NavbarV1Component,
   ],
   imports: [
     BrowserModule,
